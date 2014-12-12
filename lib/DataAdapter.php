@@ -13,7 +13,7 @@ class DataAdapter
     /**
      * @param $externalDataArray
      */
-    public function __construct($externalDataArray) {
+    public function __construct($externalDataArray){
         $this->externalDataArray = $externalDataArray;
     }
 

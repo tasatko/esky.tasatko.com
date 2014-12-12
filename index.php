@@ -10,9 +10,9 @@
 
         $objDataAdapter = array();
         $fullDataArray = array();
-        $getInterface = $objTools->arrayToLowerRecursive($_GET); //$_GET in lowercase
+        $getInterface = $objTools->arrayToLowerRecursive($_GET);
 
-    //check if this type of source is required
+        //check if this type of source is required
         if(in_array('json', (array) $getInterface['source'])){
             $objDataJson = new DataJson('data/data.json');
             $objDataAdapter[] = new DataAdapter($objDataJson);
@@ -27,7 +27,7 @@
             $objDataXml = new DataXml('data/data.xml');
             $objDataAdapter[] = new DataAdapter($objDataXml);
         }
-    //
+
         $fullDataArray = array();
         $key = 0;
 

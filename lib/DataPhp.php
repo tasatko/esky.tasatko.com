@@ -19,8 +19,8 @@ class DataPhp extends DataFilter
      * @return array
      */
     protected function _setColumnArr($fileSourceArray){
-        foreach ($fileSourceArray as $region => $arrayOfValues) {
-            foreach ($arrayOfValues as $key => $val) {
+        foreach ($fileSourceArray as $region => $arrayOfValues){
+            foreach ($arrayOfValues as $key => $val){
                 $this->code[] = $key;
                 $this->price[] = floatval(preg_replace("/[^-0-9\.]/", ".", $arrayOfValues[$key]['value']));
                 $this->name[] = $arrayOfValues[$key]['name'];

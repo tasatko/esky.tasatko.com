@@ -29,7 +29,7 @@ abstract class DataFilter
     /**
      * @param $pathToFile
      */
-    public function __construct($pathToFile) {
+    public function __construct($pathToFile){
         $fileSourceArray = $this->_getArrayFromFile($pathToFile);
         $this->_setColumnArr($fileSourceArray);
         $this->_setGlobArray();
@@ -38,7 +38,7 @@ abstract class DataFilter
     /**
      * @return array
      */
-    public function getArray() {
+    public function getArray(){
         return $this->globArray;
     }
 
@@ -58,7 +58,7 @@ abstract class DataFilter
      * @param $id
      * @return bool
      */
-    protected function _filteringData($id) {
+    protected function _filteringData($id){
         //filter by group
         if($_GET['group'] && !in_array($this->group[$id], (array) $_GET['group'])){
             return false;
@@ -69,11 +69,11 @@ abstract class DataFilter
             $condition = $_GET['price_condition'];
             $value = $_GET['price_value'];
 
-            if($condition == 'more' && $this->price[$id] <= $value) {
+            if($condition == 'more' && $this->price[$id] <= $value){
                 return false;
             }
 
-            if($condition == 'less' && $this->price[$id] >= $value) {
+            if($condition == 'less' && $this->price[$id] >= $value){
                 return false;
             }
 
@@ -89,8 +89,8 @@ abstract class DataFilter
      * Set globArray with implemented filter data
      */
     protected function _setGlobArray(){
-        foreach ($this->code as $key => $val) {
-            if ($this->_filteringData($key)) {
+        foreach ($this->code as $key => $val){
+            if ($this->_filteringData($key)){
                 $this->globArray[$key]['code'] = $val;
                 $this->globArray[$key]['price'] = $this->price[$key];
                 $this->globArray[$key]['name'] = $this->name[$key];
