@@ -95,11 +95,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="view.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6910891" vertical-offset="214" max-vertical-offset="1224">
+            <state vertical-scroll-proportion="-24.068966" vertical-offset="214" max-vertical-offset="1224">
               <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5618661" vertical-offset="4342" max-vertical-offset="5376">
+              <caret line="204" column="16" selection-start-line="204" selection-start-column="16" selection-end-line="204" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -132,6 +142,7 @@
         <option value="$PROJECT_DIR$/lib/DataFilter.php" />
         <option value="$PROJECT_DIR$/lib/DataAdapter.php" />
         <option value="$PROJECT_DIR$/lib/DataPhp.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -361,8 +372,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6910891" vertical-offset="214" max-vertical-offset="1224">
+        <state vertical-scroll-proportion="-24.068966" vertical-offset="214" max-vertical-offset="1224">
           <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5618661" vertical-offset="4342" max-vertical-offset="5376">
+          <caret line="204" column="16" selection-start-line="204" selection-start-column="16" selection-end-line="204" selection-end-column="16" />
           <folding />
         </state>
       </provider>
