@@ -9,7 +9,7 @@ class DataJson extends DataFilter
      * @param $pathToFile
      * @return mixed
      */
-    protected function _getArrayFromFile($pathToFile) {
+    protected function _getArrayFromFile($pathToFile){
         $jsonString = file_get_contents($pathToFile);
         $sourceArr = json_decode($jsonString);
         return $sourceArr;

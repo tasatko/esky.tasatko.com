@@ -9,11 +9,11 @@ class DataXml extends DataFilter
      * @param $pathToFile
      * @return bool|mixed
      */
-    protected function _getArrayFromFile($pathToFile) {
+    protected function _getArrayFromFile($pathToFile){
         libxml_use_internal_errors(true);
         $doc = simplexml_load_file($pathToFile);
 
-        if (!$doc) {
+        if(!$doc){
             return false;
         }
 

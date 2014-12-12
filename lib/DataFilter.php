@@ -88,8 +88,7 @@ abstract class DataFilter
     /**
      * Set globArray with implemented filter data
      */
-    protected function _setGlobArray()
-    {
+    protected function _setGlobArray(){
         foreach ($this->code as $key => $val) {
             if ($this->_filteringData($key)) {
                 $this->globArray[$key]['code'] = $val;

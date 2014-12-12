@@ -9,7 +9,7 @@ class DataPhp extends DataFilter
      * @param $pathToFile
      * @return mixed
      */
-    protected function _getArrayFromFile($pathToFile) {
+    protected function _getArrayFromFile($pathToFile){
         $phpArr = include $pathToFile;
         return $phpArr;
     }
@@ -18,8 +18,7 @@ class DataPhp extends DataFilter
      * @param $fileSourceArray
      * @return array
      */
-    protected function _setColumnArr($fileSourceArray)
-    {
+    protected function _setColumnArr($fileSourceArray){
         foreach ($fileSourceArray as $region => $arrayOfValues) {
             foreach ($arrayOfValues as $key => $val) {
                 $this->code[] = $key;

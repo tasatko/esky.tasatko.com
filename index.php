@@ -6,24 +6,24 @@
 
     $objTools = new Tools();
 
-    if(!empty($_GET)) {
+    if(!empty($_GET)){
 
         $objDataAdapter = array();
         $fullDataArray = array();
         $getInterface = $objTools->arrayToLowerRecursive($_GET); //$_GET in lowercase
 
     //check if this type of source is required
-        if(in_array('json', (array) $getInterface['source'])) {
+        if(in_array('json', (array) $getInterface['source'])){
             $objDataJson = new DataJson('data/data.json');
             $objDataAdapter[] = new DataAdapter($objDataJson);
         }
 
-        if(in_array('php', (array) $getInterface['source'])) {
+        if(in_array('php', (array) $getInterface['source'])){
             $objDataPhp = new DataPhp('data/data.php');
             $objDataAdapter[] = new DataAdapter($objDataPhp);
         }
 
-        if(in_array('xml', (array) $getInterface['source'])) {
+        if(in_array('xml', (array) $getInterface['source'])){
             $objDataXml = new DataXml('data/data.xml');
             $objDataAdapter[] = new DataAdapter($objDataXml);
         }

@@ -10,7 +10,7 @@ class Tools
      * @return mixed
      */
     public function arrayToLowerRecursive($array){
-        foreach ($array as $key=>$value) {
+        foreach ($array as $key=>$value){
             if(is_array($value)){
                 $this->arrayToLowerRecursive($value);
                 continue;
@@ -27,10 +27,10 @@ class Tools
      * @param bool $code_unique
      * @return array
      */
-    public function sortBy($fullDataArray, $value = 'code', $order = 'desc', $code_unique = false) {
+    public function sortBy($fullDataArray, $value = 'code', $order = 'desc', $code_unique = false){
         $total = array();
-        foreach ($fullDataArray as $key => $val) {
-            if(empty($val[$value])) {
+        foreach ($fullDataArray as $key => $val){
+            if(empty($val[$value])){
                 $value = 'code';
             }
             $total[$key] = $val[$value];
@@ -42,7 +42,7 @@ class Tools
             asort($total);
         }
 
-        foreach ($total as $key1 => $value1) {
+        foreach ($total as $key1 => $value1){
             $total[$key1] = $fullDataArray[$key1];
         }
 
@@ -58,15 +58,15 @@ class Tools
      * @param $fullDataArray
      * @return array
      */
-    private function _makeUnique($total, $fullDataArray) {
+    private function _makeUnique($total, $fullDataArray){
 
-        foreach ($total as $key => $val) {
+        foreach ($total as $key => $val){
             $total[$key] = $val['code'];
         }
 
         $total = array_unique($total);
 
-        foreach ($total as $key1 => $value1) {
+        foreach ($total as $key1 => $value1){
             $total[$key1] = $fullDataArray[$key1];
         }
 
