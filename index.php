@@ -41,8 +41,8 @@
 
         //use sort interface after all table data complete
         $fullDataArray = $objTools->sortBy($fullDataArray, $getInterface['sort_field'], $getInterface['sort_order'], $getInterface['code_unique'], $getInterface['price']);
-
-        //Put data into template, and generate table
-        $objView = new BuilderResponse();
-        include 'index.phtml';
     }
+
+//Put data into template, and generate table
+$objView = new BuilderResponse();
+include 'index.phtml';
